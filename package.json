@@ -1,0 +1,23 @@
+{
+  "name": "automationpipelinepractices",
+  "version": "1.0.0",
+  "description": "AutomationPipelinePractice",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayurasati/AutomationPipelinePractices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mayurasati/AutomationPipelinePractices/issues"
+  },
+  "homepage": "https://github.com/Mayurasati/AutomationPipelinePractices#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
