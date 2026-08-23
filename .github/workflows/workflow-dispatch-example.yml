@@ -48,3 +48,11 @@ jobs:
     steps:
       - run: echo "Deploying to ${{ inputs.environment }}"
       - run: echo "${{ inputs.Message }}"
+
+ 
+  TriggerJob:
+    uses: ./.github/workflows/onworkflowcall-example.yml
+    with:
+      environment: ${{ inputs.environment }}
+      Message: ${{ inputs.Message }}
+    
