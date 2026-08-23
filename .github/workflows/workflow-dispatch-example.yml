@@ -1,7 +1,7 @@
 # https://crontab.cronhub.io/
 # https://sqatools.in/github-actions-fundamentals-for-beginners/
 
-name: Manual Release
+name: workflow dispatch - Manual Release
 on:
   workflow_dispatch:
     inputs:
@@ -22,7 +22,28 @@ on:
         type: string    
 
 jobs:
-  deploy:
+  deploy1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "${{ inputs.Message }}"
+
+
+  deploy2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "${{ inputs.Message }}"
+
+
+  deploy3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "${{ inputs.Message }}"
+
+
+  deploy4:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying to ${{ inputs.environment }}"
